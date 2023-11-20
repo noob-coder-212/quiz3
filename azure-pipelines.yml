@@ -13,8 +13,8 @@ jobs:
       echo "Building your application"
     displayName: 'Build Step'
 
- - task: UseDotNet@2
-  inputs:
+  - task: UseDotNet@2
+    inputs:
     packageType: 'sdk'
     version: 'LTS'  # or 'latest'
 
