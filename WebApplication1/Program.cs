@@ -13,6 +13,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+Console.WriteLine("Access to local database has already been done on Nov 20, 2023 by Milankumar Khunt");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
