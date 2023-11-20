@@ -4,7 +4,7 @@ trigger:
       - main
 
 pool:
-  vmImage: 'COMP367-WINDOWS'
+  name: 'COMP367-WINDOWS'
 
 jobs:
 - job: Build
