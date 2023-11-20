@@ -11,11 +11,15 @@ jobs:
   steps:
   - script: |
       echo "Building your application"
+    displayName: 'Build Step'
+
   - task: UseDotNet@2
     inputs:
       packageType: 'sdk'
       version: '3.x.x'  # Specify the version of .NET SDK you need
+    displayName: 'Use .NET SDK'
 
   - script: |
       dotnet restore
       dotnet build --configuration Release
+    displayName: 'Build and Restore'
